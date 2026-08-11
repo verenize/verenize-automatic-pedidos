@@ -391,45 +391,47 @@ grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
 const whatsapp = "526623641909";
 const metaReembolso = 104400;
 
-const categorias = ["Todas","Promos","Tratamientos y Keratina","Shampoo y Acondicionador","Rizos","Styling"];
-let categoriaActual = "Todas";
+const categorias = ["Todos","Promos","Línea Profesional","Vereplex pro","Línea de Mantenimiento","Hi-Style","Herramientas"];
+let categoriaActual = "Todos";
 
 const productos = [
-["Tratamiento de Keratina VP12 1000 ml",1800,2500,16,true,"Kit_proteina_1000ml VP12.png","Tratamientos y Keratina"],
-["Kit de Keratina Brasileña 300 ml",800,1200,24,true,"Kit_proteina_300ml.png","Tratamientos y Keratina"],
-["Kit de Keratina Brasileña 100 ml",350,350,96,false,"Kit_proteina_100ml.png","Tratamientos y Keratina"],
-["Vereplex Pro No. 1 500 ml",700,1100,24,true,"Vereplex_No1_500ml.png","Tratamientos y Keratina"],
-["Vereplex Pro No. 2 500 ml",250,350,24,true,"Vereplex_No2_500ml.png","Tratamientos y Keratina"],
-["Kit Vereplex 500 ml",800,1200,24,true,"kit-vereplex-500.png","Tratamientos y Keratina"],
-["Kit Vereplex 120 ml",450,700,24,true,"Vereplex_No1_120ml.png","Tratamientos y Keratina"],
-["Kit Vereplex PRO Sachet 30 ml",70,90,1,false,"kit-vereplex-sachet-30.png","Tratamientos y Keratina"],
-["Shampoo Purificante 1000 ml",350,416,16,true,"Shampoo_Purificante_1000ml.png","Shampoo y Acondicionador"],
-["Shampoo de Mantenimiento 500 ml",160,200,36,true,"Shampoo_mant_500ml.png","Shampoo y Acondicionador"],
-["Acondicionador de Mantenimiento 500 ml",160,200,36,true,"Acondicionador_Mant_500ml.png","Shampoo y Acondicionador"],
-["Shampoo de Mantenimiento 1000 ml",280,360,16,true,"Shampoo_Mant_1000ml.png","Shampoo y Acondicionador"],
-["Acondicionador de Mantenimiento 1000 ml",280,360,16,true,"Acondicionador_Mant_1000ml.png","Shampoo y Acondicionador"],
-["Kit de Mantenimiento 1000 ml",450,616,16,true,"Kit_matenimiento_1000ml.png","Shampoo y Acondicionador"],
-["Kit de Mantenimiento 500 ml",290,360,36,true,"Kit_mantenimiento_500ml.png","Shampoo y Acondicionador"],
-["Kit de Mantenimiento 100 ml",120,120,96,false,"Kit_mantenimiento_100ml.png","Shampoo y Acondicionador"],
-["Tratamiento Sérum de Argán 100 ml",200,280,48,true,"Trat_SerumArgan_100ml.png","Styling"],
-["Tratamiento Sérum de Argán 50 ml",120,120,63,false,"Trat_SerumArgan_50ml.png","Styling"],
-["Mascarilla Mágica Nutritiva 500 ml",210,294,24,true,"Mascarilla_Magica_500ml.png","Tratamientos y Keratina"],
-["Mascarilla Mágica Nutritiva 100 ml",85,85,96,false,"Mascarilla_Magica_100ml.png","Tratamientos y Keratina"],
-["Tratamiento Leave In 300 ml",150,200,48,true,"Trat_LeaveIn_300ml.png","Styling"],
-["Tratamiento Leave In 100 ml",85,85,96,false,"Trat_LeaveIn_100ml.png","Styling"],
-["Caja Shot de Reparación Instantánea",360,460,36,true,"Caja_Ampolletas.png","Tratamientos y Keratina"],
-["Shot de Reparación Instantánea 12 ml",80,80,48,false,"Shot_Reparacion_12ml.png","Tratamientos y Keratina"],
-["Set de Viaje para Cuidado del Cabello",480,580,10,true,"Set_de_viaje.png","Shampoo y Acondicionador"],
-["Crema Hidratante para Rizos 300 ml",130,190,48,true,"Crema_Hidratante_Rizos_300ml.png","Rizos"],
-["Gel Hidratante para Rizos 300 ml",145,200,48,true,"ButterGel_Hidratante_Rizos_300ml.png","Rizos"],
-["Secadora V-Lux Negra",2500,3150,10,true,"Secadora_V-Lux_Negra.png","Styling"],
-["Secadora V-Lux Blanca",2500,3150,10,true,"Secadora_V-Lux_Blanca.png","Styling"],
-["Plancha de Titanio",1200,1575,15,true,"Plancha_Titanio.png","Styling"],
-["Peine de Carbón",25,42,50,true,"Peine_Carbon.png","Styling"],
-["Cepillo Cuadrado",100,140,12,true,"Cepillo_Cuadrado.png","Styling"],
-["Cepillo Redondo",160,200,10,true,"Cepillo_Redondo.png","Styling"],
-["Brocha",25,42,50,true,"Brocha.png","Styling"],
-["Kimono",250,350,20,true,"Kimono negro.png","Styling"]
+["Kit de Keratina Brasileña 1000 ml",2000,2800,16,true,"Kit_proteina_1000ml.png","Línea Profesional"],
+["Kit de Keratina Brasileña 300 ml",800,1200,24,true,"Kit_proteina_300ml.png","Línea Profesional"],
+["Kit de Keratina Brasileña 100 ml",350,350,96,false,"Kit_proteina_100ml.png","Línea Profesional"],
+["Tratamiento de Keratina VP12 1000 ml",1800,2500,16,true,"Kit_proteina_1000ml VP12.png","Línea Profesional"],
+["Tratamiento de Keratina VP8 1000 ml",1800,2500,16,true,"Kit_proteina_1000ml.png","Línea Profesional"],
+["Shampoo Purificante 1000 ml",350,416,16,true,"Shampoo_Purificante_1000ml.png","Línea Profesional"],
+["Kit Vereplex 500 ml",800,1200,24,true,"kit-vereplex-500.png","Vereplex pro"],
+["Kit Vereplex 120 ml",450,700,24,true,"Vereplex_No1_120ml.png","Vereplex pro"],
+["Vereplex Pro No. 1 500 ml",700,1100,24,true,"Vereplex_No1_500ml.png","Vereplex pro"],
+["Vereplex Pro No. 2 500 ml",250,350,24,true,"Vereplex_No2_500ml.png","Vereplex pro"],
+["Kit Vereplex PRO Sachet 30 ml",70,90,1,false,"kit-vereplex-sachet-30.png","Vereplex pro"],
+["Kit de Mantenimiento 1000 ml",450,616,16,true,"Kit_matenimiento_1000ml.png","Línea de Mantenimiento"],
+["Kit de Mantenimiento 500 ml",290,360,36,true,"Kit_mantenimiento_500ml.png","Línea de Mantenimiento"],
+["Kit de Mantenimiento 100 ml",120,120,96,false,"Kit_mantenimiento_100ml.png","Línea de Mantenimiento"],
+["Shampoo de Mantenimiento 1000 ml",280,360,16,true,"Shampoo_Mant_1000ml.png","Línea de Mantenimiento"],
+["Acondicionador de Mantenimiento 1000 ml",280,360,16,true,"Acondicionador_Mant_1000ml.png","Línea de Mantenimiento"],
+["Shampoo de Mantenimiento 500 ml",160,200,36,true,"Shampoo_mant_500ml.png","Línea de Mantenimiento"],
+["Acondicionador de Mantenimiento 500 ml",160,200,36,true,"Acondicionador_Mant_500ml.png","Línea de Mantenimiento"],
+["Tratamiento Sérum de Argán 100 ml",200,280,48,true,"Trat_SerumArgan_100ml.png","Línea de Mantenimiento"],
+["Tratamiento Sérum de Argán 50 ml",120,120,63,false,"Trat_SerumArgan_50ml.png","Línea de Mantenimiento"],
+["Mascarilla Mágica Nutritiva 500 ml",210,294,24,true,"Mascarilla_Magica_500ml.png","Línea de Mantenimiento"],
+["Mascarilla Mágica Nutritiva 100 ml",85,85,96,false,"Mascarilla_Magica_100ml.png","Línea de Mantenimiento"],
+["Tratamiento Leave In 300 ml",150,200,48,true,"Trat_LeaveIn_300ml.png","Línea de Mantenimiento"],
+["Tratamiento Leave In 100 ml",85,85,96,false,"Trat_LeaveIn_100ml.png","Línea de Mantenimiento"],
+["Caja Shot de Reparación Instantánea",360,460,36,true,"Caja_Ampolletas.png","Línea de Mantenimiento"],
+["Shot de Reparación Instantánea 12 ml",80,80,48,false,"Shot_Reparacion_12ml.png","Línea de Mantenimiento"],
+["Set de Viaje para Cuidado del Cabello",480,580,10,true,"Set_de_viaje.png","Línea de Mantenimiento"],
+["Crema Hidratante para Rizos 300 ml",130,190,48,true,"Crema_Hidratante_Rizos_300ml.png","Hi-Style"],
+["Gel Hidratante para Rizos 300 ml",145,200,48,true,"ButterGel_Hidratante_Rizos_300ml.png","Hi-Style"],
+["Secadora V-Lux Negra",2500,3150,10,true,"Secadora_V-Lux_Negra.png","Herramientas"],
+["Secadora V-Lux Blanca",2500,3150,10,true,"Secadora_V-Lux_Blanca.png","Herramientas"],
+["Plancha de Titanio",1200,1575,15,true,"Plancha_Titanio.png","Herramientas"],
+["Peine de Carbón",25,42,50,true,"Peine_Carbon.png","Herramientas"],
+["Cepillo Cuadrado",100,140,12,true,"Cepillo_Cuadrado.png","Herramientas"],
+["Cepillo Redondo",160,200,10,true,"Cepillo_Redondo.png","Herramientas"],
+["Brocha",25,42,50,true,"Brocha.png","Herramientas"],
+["Kimono",250,350,20,true,"Kimono negro.png","Herramientas"]
 ];
 
 const promos = [
@@ -459,7 +461,7 @@ function render(){
 cargarChips();
 const filtro = document.getElementById("buscador").value.toLowerCase();
 
-const mostrarPromos = categoriaActual === "Todas" || categoriaActual === "Promos";
+const mostrarPromos = categoriaActual === "Todos" || categoriaActual === "Promos";
 document.getElementById("promosSection").style.display = mostrarPromos ? "block" : "none";
 
 const promoGrid = document.getElementById("promoGrid");
@@ -490,7 +492,7 @@ const grid = document.getElementById("productGrid");
 grid.innerHTML = "";
 if(mostrarProductos){
 productos.forEach((p,i)=>{
-if(categoriaActual !== "Todas" && categoriaActual !== "Promos" && p[6] !== categoriaActual) return;
+if(categoriaActual !== "Todos" && categoriaActual !== "Promos" && p[6] !== categoriaActual) return;
 if(filtro && !p[0].toLowerCase().includes(filtro)) return;
 const cantPzas = window["cant"+i] || 0;
 const cantCajas = window["caja"+i] || 0;
@@ -661,7 +663,7 @@ promos.forEach((p,i)=>{
 window["promoCant"+i] = 0;
 });
 document.getElementById("buscador").value = "";
-categoriaActual = "Todas";
+categoriaActual = "Todos";
 render();
 }
 
