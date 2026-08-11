@@ -129,23 +129,11 @@ flex-direction: column;
 .promo-card.active{
 box-shadow:0 0 0 2px #c1672b inset;
 }
-.promo-badge{
-position:absolute;
-top:10px;
-right:10px;
-background:#fff;
-color:#c1672b;
-font-size:10px;
-font-weight:800;
-padding:4px 9px;
-border-radius:8px;
-}
 .promo-card .p-title{
 font-size:14px;
 font-weight:800;
 color:#5a331a;
-margin-top:20px;
-padding-right:50px;
+margin-top:4px;
 }
 .promo-card .p-desc{
 font-size:11.5px;
@@ -473,7 +461,6 @@ const cant = window["promoCant"+i] || 0;
 const card = document.createElement("div");
 card.className = "promo-card" + (cant > 0 ? " active" : "");
 card.innerHTML = `
-<div class="promo-badge">GRATIS</div>
 <div class="p-title">${p[0]}</div>
 <div class="p-desc">${p[1]}</div>
 <div class="p-price">$${p[2].toLocaleString('es-MX')}</div>
@@ -648,7 +635,7 @@ mensaje += `Importe: $${importe.toFixed(2)}%0A%0A`;
 });
 
 mensaje += `TOTAL ACUMULADO: $${total}%0A`;
-mensaje += `TOTAL REEMBOLSO: $${reembolso}`;
+mensaje += `TOTAL REEMBOLSO: ${reembolso}`;
 
 window.open(`https://wa.me/${whatsapp}?text=${mensaje}`,"_blank");
 }
