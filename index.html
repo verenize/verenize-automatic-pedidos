@@ -628,9 +628,9 @@ let fecha = document.getElementById("fecha").value;
 let total = document.getElementById("total").innerText;
 let reembolso = document.getElementById("reembolsoArriba").innerText;
 
-let mensaje = `Hola, quiero realizar este pedido Verenize:%0A%0A`;
-mensaje += `Socio comercial: ${socio}%0A`;
-mensaje += `Fecha de pedido: ${fecha}%0A%0A`;
+let mensaje = `*Hola, quiero realizar este pedido Verenize:*%0A%0A`;
+mensaje += `*Socio comercial:* ${socio}%0A`;
+mensaje += `*Fecha de pedido:* ${fecha}%0A%0A`;
 
 productos.forEach((p,i)=>{
 let cantPzas = window["cant"+i] || 0;
@@ -639,12 +639,11 @@ let totalPiezas = cantPzas + (cantCajas * p[3]);
 
 if(totalPiezas > 0){
 let importe = totalPiezas >= p[3] ? totalPiezas * p[1] : totalPiezas * p[2] * (p[4] ? 0.9 : 1);
-mensaje += `Producto: ${p[0]}%0A`;
-mensaje += `Piezas capturadas: ${cantPzas}%0A`;
-mensaje += `Cajas capturadas: ${cantCajas}%0A`;
-mensaje += `Total piezas: ${totalPiezas}%0A`;
-mensaje += `Importe: $${importe.toFixed(2)}%0A%0A`;
-mensaje += `Nota: Pedidos con promociones no entran en reembolso ni se aplica crédito.`;
+mensaje += `*Producto:* ${p[0]}%0A`;
+mensaje += `*Piezas capturadas:* ${cantPzas}%0A`;
+mensaje += `*Cajas capturadas:* ${cantCajas}%0A`;
+mensaje += `*Total piezas:* ${totalPiezas}%0A`;
+mensaje += `*Importe:* $${importe.toFixed(2)}%0A%0A`;
 }
 });
 
@@ -652,14 +651,15 @@ promos.forEach((p,i)=>{
 let cant = window["promoCant"+i] || 0;
 if(cant > 0){
 let importe = cant * p[2];
-mensaje += `PROMO: ${p[0]}%0A`;
-mensaje += `Cantidad: ${cant}%0A`;
-mensaje += `Importe: $${importe.toFixed(2)}%0A%0A`;
+mensaje += `*PROMO:* ${p[0]}%0A`;
+mensaje += `*Cantidad:* ${cant}%0A`;
+mensaje += `*Importe:* $${importe.toFixed(2)}%0A%0A`;
 }
 });
 
-mensaje += `TOTAL ACUMULADO: $${total}%0A`;
-mensaje += `TOTAL REEMBOLSO: ${reembolso}`;
+mensaje += `*TOTAL ACUMULADO:* $${total}%0A`;
+mensaje += `*TOTAL REEMBOLSO:* ${reembolso}%0A%0A`;
+mensaje += `*Nota: Pedidos con promociones no entran en reembolso ni se aplica crédito.*`;
 
 window.open(`https://wa.me/${whatsapp}?text=${mensaje}`,"_blank");
 }
